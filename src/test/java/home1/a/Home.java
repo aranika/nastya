@@ -43,7 +43,7 @@ public class Home {
 	}
 
 	public static String[][] Acc() {
-		r=(int)(Math.random()*10+8);
+		r=(int)(Math.random()*10+10);
 		String[][]logPas=new String [r][2];
 		logPas[0][0]="12_12_1991@list.ru"; logPas[0][1]="100k7273";
 		logPas[1][0]="";logPas[1][1]="";
@@ -52,8 +52,9 @@ public class Home {
 		logPas[4][0]="12_12_1991@list.ru"; logPas[4][1]="dww";
 		logPas[5][0]="dwdwdw";logPas[5][1]="100k7273";
 		logPas[6][0]="dwdwdw";logPas[6][1]="dwww";
+		logPas[8][0]="12_12_1991@list.ru"; logPas[8][1]="100k7273";
 		logPas[7][0]=""+(Math.random()*100);logPas[7][1]=""+(Math.random()*100);
-		for(int i=6; i<r; i++) {
+		for(int i=9; i<r; i++) {
 			logPas[i][0]=getRandomWord((int)(Math.random()*50+3)); logPas[i][1]=getRandomWord((int)(Math.random()*50+3));		
 		}
 		return logPas;
@@ -64,7 +65,7 @@ public class Home {
 		// TODO Auto-generated method stub
 		logPas=Acc();
 		String s="";
-		for(int i=0; i<2;i++) {
+		for(int i=0; i<r;i++) {
 			s=s+" №"+i+": "+LogIn(logPas[i][0], logPas[i][1]+";");
 		}
 		System.out.print(s);
