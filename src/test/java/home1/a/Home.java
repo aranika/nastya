@@ -64,7 +64,7 @@ public class Home {
 		// TODO Auto-generated method stub
 		logPas=Acc();
 		String s="";
-		for(int i=0; i<1;i++) {
+		for(int i=0; i<2;i++) {
 			s=s+" №"+i+": "+LogIn(logPas[i][0], logPas[i][1]+";");
 		}
 		System.out.print(s);
