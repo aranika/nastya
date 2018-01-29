@@ -1,5 +1,6 @@
 package home1.a;
 
+import home1.a.Profile;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -8,30 +9,42 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
+
 public class Аuthorization {
 
 	public static String logPas[][];
 	static int r;
 
 	public static boolean LogIn(String login, String password) throws InterruptedException {
+		boolean res=false;
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS); 
 		driver.get("http://86.57.161.116:10008/#/login"); Thread.sleep(10000);
 		driver.manage().window().maximize();
-		WebElement log=driver.findElement(By.cssSelector("input[name='userName']"));Thread.sleep(10000);
-		log.click(); 	        log.sendKeys(login);;
-		WebElement pas=driver.findElement(By.cssSelector("input[name='password']"));Thread.sleep(10000);
-		pas.click(); 	        pas.sendKeys(password);
-		WebElement sub=driver.findElement(By.cssSelector("button[id='buttonLogin']"));Thread.sleep(10000);
-		sub.click(); 	   
-		Thread.sleep(20000);
-		boolean res= (driver.getCurrentUrl().toString().equals("http://86.57.161.116:10008/#/vacation"));
+		
+		if (Profile.FindEl("input[name='userName']", driver)){
+			WebElement log=driver.findElement(By.cssSelector("input[name='userName']"));Thread.sleep(10000);
+			log.click(); 	        log.sendKeys(login);
+			if (Profile.FindEl("input[name='password']", driver)){
+				WebElement pas=driver.findElement(By.cssSelector("input[name='password']"));Thread.sleep(10000);
+				pas.click(); 	        pas.sendKeys(password);
+				if (Profile.FindEl("button[id='buttonLogin']", driver)){
+					WebElement sub=driver.findElement(By.cssSelector("button[id='buttonLogin']"));Thread.sleep(10000);
+					sub.click(); 	  		
+					Thread.sleep(20000);
+					res = (driver.getCurrentUrl().toString().equals("http://86.57.161.116:10008/#/vacation"));
+					
+				}}}
+		else {
+			res=false;
+		}
 		driver.close();
 		driver.quit();
 		return res;
+
 	}
-	
+
 	public static String getRandomWord(int length) {
 		StringBuilder sb = new StringBuilder(Math.max(length, 16));
 		String alphabet = "QWERTYUIOPLKJHGFDSZXCVNMЙЦУКЕНГШЩЗДЛОРПАВЫЯЧСМТЬЬБЮЖЭХЪqwertyuiop[]asdfghjkl;'zxcvbnm,.1234567890-=`йцукенгшщзхъэждлорпавыфячсмитьбю.!№;%:?)_Э\f";
@@ -68,11 +81,12 @@ public class Аuthorization {
 		String s="";
 		String a="";
 		for(int i=0; i<r;i++) {
-			a=" №"+i+": "+LogIn(logPas[i][0], logPas[i][1])+";";
+			a=" №"+i+": result is "+LogIn(logPas[i][0], logPas[i][1])+";";
 			s=s+a;
 			System.out.println(a);
 		}
-		System.out.print(s);
+		System.out.println(s);
+		System.out.print("finish");
 	}
 
 }
