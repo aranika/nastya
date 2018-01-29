@@ -53,7 +53,7 @@ public class Profile {
 				"table[class='table table-condensed table-hover'] th[ng-click*='id']",//#	
 				"table[class='table table-condensed table-hover'] th[data-i18n='vacation.startDate']",//Дата начала	
 				"table[class='table table-condensed table-hover'] th[data-i18n='vacation.endDate']",	//		Дата конца	
-				"table[class='table table-condensed table-hover'] th[data-i18n='vacation.vacType']",//Тип	
+				"table[class='table table-condensed table-hover'] th[data-i18n='vacation.vacType']",//Тип
 				"table[class='table table-condensed table-hover'] th[data-i18n='vacation.vacStatus']",				//Статус	
 				"table[class='table table-condensed table-hover'] th[data-i18n='vacation.comment']",				//Комментарий	
 				"table[class='table table-condensed table-hover'] th[data-i18n='vacation.actions']",				//Действия
