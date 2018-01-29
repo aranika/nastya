@@ -48,9 +48,9 @@ public class Profile {
 				"input[class*='search ']",				//поле ввода поиска
 				"span[class*='glyphicon glyphicon-search']",				//кнопка поиска
 				"div[class='col-xs-8 accordion-toggle']",				//запросы на отпуска
-				"button[class='btn btn-sm btn-success xh-highlight']",			//запрос сверурочных
+				"button[data-i18n='vacation.button.reqOvertime']",			//запрос сверурочных
 				"button[class='btn btn-sm btn-success']",//запрос на отпуск
-				"table[class='table table-condensed table-hover'] th[ng-click='sort('id')']",//#	
+				"table[class='table table-condensed table-hover'] th[ng-click*='id']",//#	
 				"table[class='table table-condensed table-hover'] th[data-i18n='vacation.startDate']",//Дата начала	
 				"table[class='table table-condensed table-hover'] th[data-i18n='vacation.endDate']",	//		Дата конца	
 				"table[class='table table-condensed table-hover'] th[data-i18n='vacation.vacType']",//Тип	
