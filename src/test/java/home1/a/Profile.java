@@ -46,7 +46,7 @@ public class Profile {
 				"a[href*='#histo']",	//история отпусков
 				"a[href*='#to']",				//калькулятор
 				"input[class*='search ']",				//поле ввода поиска
-			"span[class*='glyphicon glyphicon-search']",				//кнопка поиска
+				"span[class*='glyphicon glyphicon-search']",				//кнопка поиска
 				"div[class='col-xs-8 accordion-toggle']",				//запросы на отпуска
 				"button[data-i18n='vacation.button.reqOvertime']",			//запрос сверурочных
 				"button[class='btn btn-sm btn-success']",//запрос на отпуск
