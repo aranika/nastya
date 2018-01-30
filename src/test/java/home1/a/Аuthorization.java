@@ -106,5 +106,4 @@ public class Аuthorization {
 		System.out.println(s);
 		System.out.print("finish");
 	}
-
 }
