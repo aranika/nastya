@@ -34,7 +34,9 @@ public class Аuthorization {
 					sub.click(); 	  		
 					Thread.sleep(20000);
 					res = (driver.getCurrentUrl().toString().equals("http://86.57.161.116:10008/#/vacation"));
-				}}}
+				}
+			}
+		}
 		else {
 			res=false;
 		}
@@ -99,7 +101,7 @@ public class Аuthorization {
 		String a="";
 		for(int i=0; i<r;i++) {
 			a=" №"+(i+1)+": result is "+LogIn(logPas[i][0], logPas[i][1])+" for log: ["+logPas[i][0]+"], pas: ["+logPas[i][1]+ "];";
-//			a=" №"+(i+1)+": result is for log: "+logPas[i][0]+", pas: "+logPas[i][1]+ ";";
+			//			a=" №"+(i+1)+": result is for log: "+logPas[i][0]+", pas: "+logPas[i][1]+ ";";
 			s=s+a;
 			System.out.println(a);
 		}
