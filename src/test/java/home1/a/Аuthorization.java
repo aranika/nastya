@@ -33,8 +33,7 @@ public class Аuthorization {
 					WebElement sub=driver.findElement(By.cssSelector("button[id='buttonLogin']"));Thread.sleep(10000);
 					sub.click(); 	  		
 					Thread.sleep(20000);
-					res = (driver.getCurrentUrl().toString().equals("http://86.57.161.116:10008/#/Vacation"));
-
+					res = (driver.getCurrentUrl().toString().equals("http://86.57.161.116:10008/#/vacation"));
 				}}}
 		else {
 			res=false;
@@ -42,7 +41,6 @@ public class Аuthorization {
 		driver.close();
 		driver.quit();
 		return res;
-
 	}
 
 	public static String getRandomWord(int length, String lang) {
