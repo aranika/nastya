@@ -100,7 +100,7 @@ public class Аuthorization {
 		String s="";
 		String a="";
 		for(int i=0; i<r;i++) {
-			a=" №"+(i+1)+": result is "+LogIn(logPas[i][0], logPas[i][1])+" for log: "+logPas[i][0]+", pas: "+logPas[i][1]+ ";";
+			a=" №"+(i+1)+": result is "+LogIn(logPas[i][0], logPas[i][1])+" for log: ["+logPas[i][0]+"], pas: ["+logPas[i][1]+ "];";
 //			a=" №"+(i+1)+": result is for log: "+logPas[i][0]+", pas: "+logPas[i][1]+ ";";
 			s=s+a;
 			System.out.println(a);
