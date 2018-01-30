@@ -110,10 +110,10 @@ public class Vacation {
 		//		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); 
 		LogIn("kolia", "empl", driver);
-		driver.get("http://86.57.161.116:10008/#/profile");
+		driver.get("http://86.57.161.116:10008/#/vacation");
 		String [][] arrayEl=ArrayEl();
 		int n=arrayEl.length;
-		for (int i=45;i<n;i++) {
+		for (int i=0;i<n;i++) {
 			System.out.println(i+ " result of search  = " + FindEl(arrayEl[i][0], driver)+ " for "+ arrayEl[i][1]+"; ");
 		}
 		driver.close();

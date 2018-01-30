@@ -2,10 +2,12 @@ package home1.a;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
+import org.openqa.selenium.By.ByCssSelector;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.ClickAction;
 
 public class Profile {
 
@@ -20,11 +22,11 @@ public class Profile {
 	}
 
 	public static void LogIn(String login, String password, WebDriver driver) throws InterruptedException {
-		WebElement log=driver.findElement(By.cssSelector("input[name='userName']"));Thread.sleep(5000);
+		WebElement log=driver.findElement(By.cssSelector("input[name='userName']"));Thread.sleep(500);
 		log.click(); 	        log.sendKeys(login);;
-		WebElement pas=driver.findElement(By.cssSelector("input[name='password']"));Thread.sleep(5000);
+		WebElement pas=driver.findElement(By.cssSelector("input[name='password']"));Thread.sleep(500);
 		pas.click(); 	        pas.sendKeys(password);
-		WebElement sub=driver.findElement(By.cssSelector("button[id='buttonLogin']"));Thread.sleep(5000);
+		WebElement sub=driver.findElement(By.cssSelector("button[id='buttonLogin']"));Thread.sleep(500);
 		sub.click();
 		System.out.println("Login Ok");
 	}
@@ -37,8 +39,8 @@ public class Profile {
 				{"a[class='dropdown-toggle']", "язык"},
 				{"span[class*='glyphicon glyphicon-user']", "авка"},
 				{"a[class='dropdown-toggle']>span[class='ng-binding']","имя"},
-				{"a>b","выпадающее"},
-				{"a[ng-click='profileURL()']","Профиль"},
+				{"a>b","выпадающее"},//7
+				{"a[ng-click='profileURL()']","Профиль"},//8
 				{"a[ng-click=\"logout()\"]","Выйти"},
 				{"a[href='#vacations']","общая"},
 				{"a[href*='#histo']","история отпусков"},
@@ -111,13 +113,16 @@ public class Profile {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); 
 		LogIn("kolia", "empl", driver);
 		driver.get("http://86.57.161.116:10008/#/profile");
+		System.out.print("dsd");
 		String [][] arrayEl=ArrayEl();
 		int n=arrayEl.length;
-		for (int i=45;i<n;i++) {
-			System.out.println(i+ " result of search  = " + FindEl(arrayEl[i][0], driver)+ " for "+ arrayEl[i][1]+"; ");
-		}
-		driver.close();
-		driver.quit();
+		driver.findElement(By.cssSelector(arrayEl[6][0])).click();
+		driver.findElement(By.cssSelector(arrayEl[8][0])).click();
+	//		for (int i=0;i<n;i++) {
+//			System.out.println(i+ " result of search  = " + FindEl(arrayEl[i][0], driver)+ " for "+ arrayEl[i][1]+"; ");
+//		}
+//		driver.close();
+//		driver.quit();
 		System.out.print("finish");
 	}
 }
