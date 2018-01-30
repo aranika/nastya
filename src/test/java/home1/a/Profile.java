@@ -10,9 +10,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Profile {
 
 	public static boolean FindEl(String el, WebDriver driver) {
-		try {driver.findElement(By.cssSelector(el)).isDisplayed();
-		return true;
-		} catch (NoSuchElementException e) {
+		try {
+			driver.findElement(By.cssSelector(el)).isDisplayed();
+			return true;
+		} 
+		catch (NoSuchElementException e) {
 			// TODO: handle exception
 			return false;
 		}
@@ -178,10 +180,10 @@ public class Profile {
 		for (int i=0;i<ArrayElProfEdit().length;i++) {
 			System.out.println("result of search = " + FindEl(ArrayElProfEdit()[i][0], driver)+ " for "+ ArrayElProfEdit()[i][1]+"; ");
 		}
-		
+
 		driver.close();
 		driver.quit();
-		
+
 		System.out.print("finish 2");
 	}
 }
