@@ -1,10 +1,11 @@
-package pages;
+package PageFactory;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 	WebDriver driver;
-	By log=By.id("logininput");
+	By userName=By.id("logininput");
 	By password=By.id("passwordinput");
 	By login=By.id("buttonLogin");
 	By reset=By.id("buttonReset");
@@ -13,10 +14,11 @@ public class LoginPage {
 	public LoginPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		this.driver=driver;
+		PageFactory.initElements(driver, this);
 	}
 
 	public void setLog(String strLog) {
-		driver.findElement(log).sendKeys(strLog);
+		driver.findElement(userName).sendKeys(strLog);
 	}
 	public void setPassword(String strPassword) {
 		driver.findElement(password).sendKeys(strPassword);

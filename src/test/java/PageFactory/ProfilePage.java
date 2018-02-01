@@ -1,5 +1,6 @@
-package pages;
+package PageFactory;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.PageFactory;
 public class ProfilePage {
 	WebDriver driver;
 	By name=By.cssSelector("[class='dropdown-toggle'] span[class='ng-binding']");
@@ -43,4 +44,11 @@ public class ProfilePage {
 	By workstationVal=By.xpath("/html/body/div[@id='main']/section[@class='container contentContainer ng-scope']/div[@class='ng-scope'][2]/div[@class='pageContent panel panel-default ng-scope']/div[@class='panel-body']/div[@class='row']/div[@class='col-md-9 profileContent']/table[@class='table table-condensed table-hover'][3]/tbody/tr[6]/td[2]");
 	By comment=By.xpath("/html/body/div[@id='main']/section[@class='container contentContainer ng-scope']/div[@class='ng-scope'][2]/div[@class='pageContent panel panel-default ng-scope']/div[@class='panel-body']/div[@class='row']/div[@class='col-md-9 profileContent']/table[@class='table table-condensed table-hover'][3]/tbody/tr[7]/td[1]");	
 	By commentVal=By.xpath("/html/body/div[@id='main']/section[@class='container contentContainer ng-scope']/div[@class='ng-scope'][2]/div[@class='pageContent panel panel-default ng-scope']/div[@class='panel-body']/div[@class='row']/div[@class='col-md-9 profileContent']/table[@class='table table-condensed table-hover'][3]/tbody/tr[7]/td[2]");		
+
+	public ProfilePage(WebDriver driver) {
+		// TODO Auto-generated constructor stub
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	}
+
 }

@@ -1,19 +1,11 @@
-package home1.a;
+package Source;
 
-import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
+import utility.RandomWord;
 
-import utility.*;
-
-public class Аuthorization {
-
-	public static String logPas[][];
-	static int r;
-
-
-
-	public static String[][] Acc() {
-		r=(int)(Math.random()*10+17);
+public class Users {
+	
+	public String[][] getUsers() {
+		int r=(int)(Math.random()*10+17);
 		String[][]logPas=new String [r][2];
 		logPas[0][0]="kolia"; logPas[0][1]="empl";
 		logPas[1][0]="";logPas[1][1]="";
@@ -38,23 +30,4 @@ public class Аuthorization {
 		return logPas;
 	}
 
-	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
-		logPas=Acc();
-		String s="";
-		String a="";
-		for(int i=0; i<r;i++) {
-			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-			WebDriver driver = new ChromeDriver();
-			a=" №"+(i+1)+": result is "+Login.LogIn(logPas[i][0], logPas[i][1], driver)+" for userName: ["+logPas[i][0]+"], pas: ["+logPas[i][1]+ "];";
-			s=s+a;
-			System.out.println(a);
-			driver.close();
-			driver.quit();
-		}
-		System.out.println(s);
-		System.out.print("finish");
-//		
-//		
-	}
 }
