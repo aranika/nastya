@@ -17,7 +17,7 @@ public class ValidationElements {
 		return true;
 	}
 
-	public boolean ValidationPageByCss(WebDriver driver, String el) {
+	public static boolean ValidationPageByCss(WebDriver driver, String el) {
 		if (!(FindEl.FindElByCss(el, driver)))
 				{
 			System.out.println("не та страница");

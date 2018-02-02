@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.TestProfilePage">
+      <class name="test.TestLoginPage">
         <methods>
           <include name="before"/>
-          <include name="phoneEqual"/>
+          <include name="after"/>
+          <include name="testLogin" invocation-numbers="1"/>
         </methods>
-      </class> <!-- test.TestProfilePage -->
+      </class> <!-- test.TestLoginPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

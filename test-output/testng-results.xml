@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="2" passed="1" failed="1" skipped="0">
+<testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-02-02T17:34:57Z" name="Suite" finished-at="2018-02-02T17:35:27Z" duration-ms="29956">
+  <suite started-at="2018-02-02T18:10:43Z" name="Default suite" finished-at="2018-02-02T18:11:12Z" duration-ms="28759">
     <groups>
       <group name="A">
         <method signature="TestLoginPage.testLogin(java.lang.String, java.lang.String)[pri:0, instance:test.TestLoginPage@1018bde2]" name="testLogin" class="test.TestLoginPage"/>
       </group> <!-- A -->
     </groups>
-    <test started-at="2018-02-02T17:34:57Z" name="test suit" finished-at="2018-02-02T17:35:27Z" duration-ms="29956">
+    <test started-at="2018-02-02T18:10:43Z" name="Default test" finished-at="2018-02-02T18:11:12Z" duration-ms="28759">
       <class name="test.TestLoginPage">
-        <test-method is-config="true" signature="before()[pri:0, instance:test.TestLoginPage@1018bde2]" started-at="2018-02-02T20:34:57Z" name="before" finished-at="2018-02-02T20:35:05Z" duration-ms="7439" status="PASS">
+        <test-method is-config="true" signature="before()[pri:0, instance:test.TestLoginPage@1018bde2]" started-at="2018-02-02T21:10:43Z" name="before" finished-at="2018-02-02T21:10:50Z" duration-ms="6932" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:test.TestLoginPage@1018bde2]" started-at="2018-02-02T20:35:05Z" name="testLogin" data-provider="dp" finished-at="2018-02-02T20:35:06Z" duration-ms="1453" status="PASS">
+        <test-method signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:test.TestLoginPage@1018bde2]" started-at="2018-02-02T21:10:50Z" name="testLogin" data-provider="dp" finished-at="2018-02-02T21:10:51Z" duration-ms="1388" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,15 +30,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="after()[pri:0, instance:test.TestLoginPage@1018bde2]" started-at="2018-02-02T20:35:06Z" name="after" finished-at="2018-02-02T20:35:08Z" duration-ms="1339" status="PASS">
+        <test-method is-config="true" signature="after()[pri:0, instance:test.TestLoginPage@1018bde2]" started-at="2018-02-02T21:10:51Z" name="after" finished-at="2018-02-02T21:10:54Z" duration-ms="3381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method is-config="true" signature="before()[pri:0, instance:test.TestLoginPage@1018bde2]" started-at="2018-02-02T20:35:08Z" name="before" finished-at="2018-02-02T20:35:14Z" duration-ms="6045" status="PASS">
+        <test-method is-config="true" signature="before()[pri:0, instance:test.TestLoginPage@1018bde2]" started-at="2018-02-02T21:10:54Z" name="before" finished-at="2018-02-02T21:11:00Z" duration-ms="5341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:test.TestLoginPage@1018bde2]" started-at="2018-02-02T20:35:14Z" name="testLogin" data-provider="dp" finished-at="2018-02-02T20:35:25Z" duration-ms="10902" status="FAIL">
+        <test-method signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:test.TestLoginPage@1018bde2]" started-at="2018-02-02T21:11:00Z" name="testLogin" data-provider="dp" finished-at="2018-02-02T21:11:11Z" duration-ms="10860" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,63 +51,14 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.id: vacationsTab (tried for 10 second(s) with 500 MILLISECONDS interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: vacationsTab (tried for 10 second(s) with 500 MILLISECONDS interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
-	at test.TestLoginPage.testLogin(TestLoginPage.java:33)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: vacationsTab
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.3.1', revision: '5234b325d5', time: '2017-03-10 09:10:29 +0000'
-System info: host: 'DESKTOP-R95C30S', ip: '192.168.43.84', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:899)
-	at java.base/java.util.Optional.orElseThrow(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:898)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:184)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="after()[pri:0, instance:test.TestLoginPage@1018bde2]" started-at="2018-02-02T20:35:25Z" name="after" finished-at="2018-02-02T20:35:27Z" duration-ms="2747" status="PASS">
+        <test-method is-config="true" signature="after()[pri:0, instance:test.TestLoginPage@1018bde2]" started-at="2018-02-02T21:11:11Z" name="after" finished-at="2018-02-02T21:11:12Z" duration-ms="829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- test.TestLoginPage -->
-    </test> <!-- test suit -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
