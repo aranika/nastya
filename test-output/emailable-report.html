@@ -31,15 +31,46 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">test suit</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">0,1 seconds</td><td class="numi">A </td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Regression suite</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi_attn">2</td><td class="numi">67,5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">test suit &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="2">test.TestLoginPage</td><td><a href="#m1"><b>testLogin</b> (A) </a></td><td class="numi">2</td><td>1517576806901</td><td class="numi">16</td></tr><tr class="failedodd"><td><a href="#m2"><b>testLogin</b> (A) </a></td><td class="numi">2</td><td>1517576806901</td><td class="numi">16</td></tr>
+<tr><th colspan="4">Regression suite &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">test.TestLoginPage</td><td><a href="#m1"><b>after</b>  </a></td><td class="numi">1</td><td>1517591553968</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Regression suite &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">test.TestLoginPage</td><td><a href="#m2"><b>testLogin</b> (A) </a></td><td class="numi">1</td><td>1517591531482</td><td class="numi">22470</td></tr><tr class="failedodd"><td><a href="#m3"><b>testLogin</b> (A) </a></td><td class="numi">1</td><td>1517591531482</td><td class="numi">22470</td></tr>
+<tr><th colspan="4">Regression suite &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="2">test.TestLoginPage</td><td><a href="#m4"><b>before</b>  </a></td><td class="numi">1</td><td>1517591554023</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m5"><b>after</b>  </a></td><td class="numi">1</td><td>1517591554042</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Regression suite &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="2">test.TestLoginPage</td><td><a href="#m6"><b>testLogin</b> (A) </a></td><td class="numi">1</td><td>1517591554030</td><td class="numi">3</td></tr><tr class="skippedodd"><td><a href="#m7"><b>testLogin</b> (A) </a></td><td class="numi">1</td><td>1517591554030</td><td class="numi">3</td></tr>
 </table>
-<h1>test suit</h1>
-<h2 id="m1">test.TestLoginPage:testLogin</h2>
+<h1>Regression suite</h1>
+<h2 id="m1">test.TestLoginPage:after</h2>
+<div style="padding-left:3em">
+<p>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 39 milliseconds
+Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b325d5&apos;, time: &apos;2017-03-10 09:10:29 +0000&apos;
+System info: host: &apos;DESKTOP-R95C30S&apos;, ip: &apos;172.20.20.26&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\EGOR\AppData\Local\Temp\scoped_dir9964_26401}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 68a409c7128798ee42238ad479bdd29f</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:661)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:490)
+<br/>at test.TestLoginPage.after(TestLoginPage.java:50)
+<br/>27 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">test.TestLoginPage:testLogin</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>kolia</td>
@@ -54,19 +85,16 @@ PageFactory.LoginPage.setLog(LoginPage.java:23)
 </td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">test.TestLoginPage:testLogin</h2>
+<h2 id="m3">test.TestLoginPage:before</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">test.TestLoginPage:after</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">test.TestLoginPage:testLogin</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>kkskolia</td>
 <td>eempl</td>
 </tr>
-<tr><td style="padding-left:3em" colspan="2">
-<p>null</p>
-PageFactory.LoginPage.setLog(LoginPage.java:23)
-<br/>at PageFactory.LoginPage.toLogin(LoginPage.java:36)
-<br/>at test.TestLoginPage.testLogin(TestLoginPage.java:32)
-<br/>25 lines not shown
-</td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

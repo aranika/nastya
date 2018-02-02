@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="test suit(failed)">
-    <groups>
-      <run>
-        <include name="A"/>
-      </run>
-    </groups>
+<suite name="Failed suite [example suite 1]">
+  <test name="Regression suite(failed)">
     <classes>
       <class name="test.TestLoginPage">
         <methods>
-          <include name="testLogin" invocation-numbers="0 1"/>
+          <include name="before"/>
+          <include name="after"/>
+          <include name="testLogin" invocation-numbers="0"/>
         </methods>
       </class> <!-- test.TestLoginPage -->
     </classes>
-  </test> <!-- test suit(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Regression suite(failed) -->
+</suite> <!-- Failed suite [example suite 1] -->
