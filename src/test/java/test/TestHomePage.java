@@ -19,7 +19,7 @@ public class TestHomePage {
 
 
 	@BeforeTest 
-	public void beforeTest() {
+	public void beforeTest() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

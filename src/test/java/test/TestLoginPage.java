@@ -1,45 +1,52 @@
 package test;
 
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.concurrent.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
 import PageFactory.*;
 import Source.Users;
-import utility.ValidationPage;
+import utility.ValidationElements;
 
 public class TestLoginPage {
 	WebDriver driver;
 	LoginPage objLogin;
 
 	@DataProvider(name="dp")
-	public static Object[][]testData() 
-	{
-		return (new Users().getUsers());
+	public static Object[][] testData() {
+		Object[][] s=(new Users()).getShortUsers();
+		return s;
 	}
 
-	@Test (groups= {"A"}, priority=20, dataProvider = "dp", timeOut=1000)
+	@Test (groups= {"A"}, dataProvider = "dp", priority=20)
 	@Parameters(value= {"name","password"})
 	public void testLogin(String name, String password) {
+		
 		objLogin=new LoginPage(driver);
 		objLogin.toLogin(name, password);
+		(new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.id("vacationsTab")));
+		(new ValidationElements()).ValidationPageURL(driver, "http://86.57.161.116:10008/#/vacation");		
 	}
 
-	@BeforeTest
-	public void beforeTest() {
+	@BeforeMethod
+	public void before() {
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		driver=new ChromeDriver();
 		objLogin=new LoginPage(driver);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(objLogin.getUrlLoginPage());
-//		(new ValidationPage()).ValidationURL(driver, objLogin.getUrlLoginPage());
+		(new ValidationElements()).ValidationPageURL(driver, objLogin.getUrlLoginPage());
+		
 	}
 
-	@AfterSuite
-	public void afterTest() {
-		driver=new ChromeDriver();
+	@AfterMethod
+	public void after() {
 		driver.close();
 		driver.quit();
 	}

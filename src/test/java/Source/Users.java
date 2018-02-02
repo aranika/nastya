@@ -3,10 +3,10 @@ package Source;
 import utility.RandomWord;
 
 public class Users {
-	
-	public String[][] getUsers() {
+
+	public Object[][] getUsers() {
 		int r=(int)(Math.random()*10+17);
-		String[][]logPas=new String [r][2];
+		Object[][]logPas=new String [3][2];
 		logPas[0][0]="kolia"; logPas[0][1]="empl";
 		logPas[1][0]="";logPas[1][1]="";
 		logPas[2][0]="kolia"; logPas[2][1]="";
@@ -27,6 +27,12 @@ public class Users {
 		for(int i=17; i<r; i++) {
 			logPas[i][0]=RandomWord.All((int)(Math.random()*50+3)); logPas[i][1]=RandomWord.All((int)(Math.random()*50+3));		
 		}
+		return logPas;
+	}
+	public Object[][] getShortUsers() {
+		Object[][]logPas=new String [2][2];
+		logPas[0][0]="kolia"; logPas[0][1]="empl";
+		logPas[1][0]="kkskolia"; logPas[1][1]="eempl";
 		return logPas;
 	}
 

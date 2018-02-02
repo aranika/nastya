@@ -6,9 +6,10 @@
 			<define name="all">
 				<include name="A"></include>
 				<include name="B"></include>
+				<include name="Profile"></include>
 			</define>
 			<run>
-				<include name="all"></include>
+				<include name="Email"></include>
 			</run>
 		</groups>
 		<packages>

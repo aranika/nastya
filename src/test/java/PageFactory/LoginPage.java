@@ -1,5 +1,7 @@
 package PageFactory;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 
@@ -24,16 +26,17 @@ public class LoginPage {
 		driver.findElement(password).sendKeys(strPassword);
 	}
 	public void clickLogin() {
-		driver.findElement(login).click();;
+		driver.findElement(login).click();
 	}
 	public void clickReset() {
-		driver.findElement(reset).click();;
+		driver.findElement(reset).click();
 	}
 	
 	public void toLogin(String strLog, String strPassword) {
 		this.setLog(strLog);
 		this.setPassword(strPassword);
-		this.clickLogin();
+		this.clickLogin(); 
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
 	
 	public String getUrlLoginPage() {

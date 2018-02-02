@@ -4,20 +4,15 @@
   <test name="test suit(failed)">
     <groups>
       <run>
-        <include name="all"/>
+        <include name="Email"/>
       </run>
     </groups>
     <classes>
-      <class name="test.TestLoginPage">
+      <class name="test.TestProfilePage">
         <methods>
-          <include name="testLogin" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21"/>
+          <include name="testEmail"/>
         </methods>
-      </class> <!-- test.TestLoginPage -->
-      <class name="test.TestHomePage">
-        <methods>
-          <include name="testGoToProfile"/>
-        </methods>
-      </class> <!-- test.TestHomePage -->
+      </class> <!-- test.TestProfilePage -->
     </classes>
   </test> <!-- test suit(failed) -->
 </suite> <!-- Failed suite [Suite] -->

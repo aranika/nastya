@@ -3,6 +3,7 @@ package utility;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class FindEl {	
 
@@ -16,7 +17,7 @@ public class FindEl {
 			return false;
 		}
 	}
-	
+
 	public static boolean FindElByXPath(String xpathExpression, WebDriver driver) {
 		try {
 			driver.findElement(By.xpath(xpathExpression)).isDisplayed();
@@ -26,5 +27,21 @@ public class FindEl {
 			// TODO: handle exception
 			return false;
 		}
+	}
+
+	public static String getValueByCss(String selector, WebDriver driver) {
+		WebElement el= (driver.findElement(By.cssSelector(selector)));
+		if(FindElByCss(selector, driver)) {
+			return el.getAttribute("value");
+		}
+		return "";
+	}
+
+	public static String getValueByXPath(String xpathExpression, WebDriver driver) {
+		WebElement el=(driver.findElement(By.xpath(xpathExpression)));
+		if(FindElByXPath(xpathExpression, driver)) {
+			return el.getAttribute("value");
+		}
+		return "";
 	}
 }

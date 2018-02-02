@@ -1,12 +1,19 @@
 package PageFactory;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
+
+import Source.*;
+import utility.*;
 public class ProfilePage {
 	WebDriver driver;
+	String [][]arrayElEdidProfile=(new ElementsProfileSettings()).ArrayElProfEdit();
+	
 	By name=By.cssSelector("[class='dropdown-toggle'] span[class='ng-binding']");
 	By profile=By.cssSelector("[ng-click='profileURL()']");
 	By logout=By.cssSelector("[ng-click='logout()']");
-	By settings=By.cssSelector("span[class='glyphicon glyphicon-wrench']");
+	By settings=By.cssSelector("a[ng-click='setSettings()']");
 	By contactInfo =By.cssSelector("th[data-i18n='profile.contactInfo']");
 	By email=By.cssSelector("td[data-i18n='profile.field.email']");
 	By emailVal=By.cssSelector("table[class='table table-condensed table-hover']:nth-child(1) tr:nth-child(1) td[class='ng-binding']");
@@ -45,12 +52,28 @@ public class ProfilePage {
 	By comment=By.xpath("/html/body/div[@id='main']/section[@class='container contentContainer ng-scope']/div[@class='ng-scope'][2]/div[@class='pageContent panel panel-default ng-scope']/div[@class='panel-body']/div[@class='row']/div[@class='col-md-9 profileContent']/table[@class='table table-condensed table-hover'][3]/tbody/tr[7]/td[1]");	
 	By commentVal=By.xpath("/html/body/div[@id='main']/section[@class='container contentContainer ng-scope']/div[@class='ng-scope'][2]/div[@class='pageContent panel panel-default ng-scope']/div[@class='panel-body']/div[@class='row']/div[@class='col-md-9 profileContent']/table[@class='table table-condensed table-hover'][3]/tbody/tr[7]/td[2]");		
 
+	By editName=By.cssSelector(arrayElEdidProfile[21][0]);
+	By editMidName=By.cssSelector(arrayElEdidProfile[22][0]);
+	By editSecName=By.cssSelector(arrayElEdidProfile[23][0]);
+	By editEmail=By.cssSelector(arrayElEdidProfile[29][0]);
+	By editPhone=By.cssSelector(arrayElEdidProfile[31][0]); 
+	
 	public ProfilePage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	public String getEmail() {
-		return emailVal.toString();
+	
+	public void goToSettings() {
+		driver.findElement(settings).click();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
+	
+	
+	public String getEmail() {
+		 return FindEl.getValueByCss(arrayElEdidProfile[29][0], driver);// driver.findElement(editEmail).getAttribute("value");
+	}
+	public String getPhone() {
+		 return FindEl.getValueByCss(arrayElEdidProfile[31][0], driver);
+	}	
 }
