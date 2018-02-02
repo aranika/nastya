@@ -6,8 +6,7 @@
       <class name="test.TestProfilePage">
         <methods>
           <include name="before"/>
-          <include name="testPhone"/>
-          <include name="after"/>
+          <include name="phoneEqual"/>
         </methods>
       </class> <!-- test.TestProfilePage -->
     </classes>

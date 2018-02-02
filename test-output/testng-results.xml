@@ -1,47 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="2" passed="2" failed="0" skipped="0">
+<testng-results total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-02-02T12:13:33Z" name="Default suite" finished-at="2018-02-02T12:14:14Z" duration-ms="40859">
+  <suite started-at="2018-02-02T13:06:46Z" name="Suite" finished-at="2018-02-02T13:06:46Z" duration-ms="54">
     <groups>
-      <group name="Email">
-        <method signature="TestProfilePage.testEmail()[pri:0, instance:test.TestProfilePage@38e79ae3]" name="testEmail" class="test.TestProfilePage"/>
-      </group> <!-- Email -->
-      <group name="Phone">
-        <method signature="TestProfilePage.testPhone()[pri:0, instance:test.TestProfilePage@38e79ae3]" name="testPhone" class="test.TestProfilePage"/>
-      </group> <!-- Phone -->
-      <group name="Profile">
-        <method signature="TestProfilePage.testEmail()[pri:0, instance:test.TestProfilePage@38e79ae3]" name="testEmail" class="test.TestProfilePage"/>
-        <method signature="TestProfilePage.testPhone()[pri:0, instance:test.TestProfilePage@38e79ae3]" name="testPhone" class="test.TestProfilePage"/>
-      </group> <!-- Profile -->
+      <group name="A">
+        <method signature="TestLoginPage.testLogin(java.lang.String, java.lang.String)[pri:0, instance:test.TestLoginPage@6a03bcb1]" name="testLogin" class="test.TestLoginPage"/>
+      </group> <!-- A -->
     </groups>
-    <test started-at="2018-02-02T12:13:33Z" name="Default test" finished-at="2018-02-02T12:14:14Z" duration-ms="40859">
-      <class name="test.TestProfilePage">
-        <test-method is-config="true" signature="before()[pri:0, instance:test.TestProfilePage@38e79ae3]" started-at="2018-02-02T15:13:33Z" name="before" finished-at="2018-02-02T15:13:56Z" duration-ms="22806" status="PASS">
+    <test started-at="2018-02-02T13:06:46Z" name="test suit" finished-at="2018-02-02T13:06:46Z" duration-ms="54">
+      <class name="test.TestLoginPage">
+        <test-method signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:test.TestLoginPage@6a03bcb1]" started-at="2018-02-02T16:06:46Z" name="testLogin" data-provider="dp" finished-at="2018-02-02T16:06:46Z" duration-ms="16" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kolia]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[empl]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:23)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:36)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- before -->
-        <test-method signature="testEmail()[pri:0, instance:test.TestProfilePage@38e79ae3]" started-at="2018-02-02T15:13:56Z" name="testEmail" finished-at="2018-02-02T15:13:56Z" duration-ms="184" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:test.TestLoginPage@6a03bcb1]" started-at="2018-02-02T16:06:46Z" name="testLogin" data-provider="dp" finished-at="2018-02-02T16:06:46Z" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kkskolia]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[eempl]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:23)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:36)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEmail -->
-        <test-method is-config="true" signature="after()[pri:0, instance:test.TestProfilePage@38e79ae3]" started-at="2018-02-02T15:13:56Z" name="after" finished-at="2018-02-02T15:13:57Z" duration-ms="1123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method is-config="true" signature="before()[pri:0, instance:test.TestProfilePage@38e79ae3]" started-at="2018-02-02T15:13:57Z" name="before" finished-at="2018-02-02T15:14:13Z" duration-ms="15492" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method signature="testPhone()[pri:0, instance:test.TestProfilePage@38e79ae3]" started-at="2018-02-02T15:14:13Z" name="testPhone" finished-at="2018-02-02T15:14:13Z" duration-ms="208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPhone -->
-        <test-method is-config="true" signature="after()[pri:0, instance:test.TestProfilePage@38e79ae3]" started-at="2018-02-02T15:14:13Z" name="after" finished-at="2018-02-02T15:14:14Z" duration-ms="1021" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-      </class> <!-- test.TestProfilePage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testLogin -->
+      </class> <!-- test.TestLoginPage -->
+    </test> <!-- test suit -->
+  </suite> <!-- Suite -->
 </testng-results>

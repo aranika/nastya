@@ -1,8 +1,7 @@
 package test;
 
-import org.testng.annotations.Test;
-
 import PageFactory.*;
+import Source.Users;
 import utility.*;
 
 import java.util.concurrent.TimeUnit;
@@ -16,22 +15,27 @@ public class TestProfilePage {
 	LoginPage objLogin;
 	ProfilePage objProfile;
 	HomePage objHome;
+	
+//	@DataProvider (name="dpPhone")
+//	public static Object[] testData() {
+//		return  Users.getPhone() ;
+//	}
 
-	@Test (groups= {"Profile", "Email"})
+	@Test (groups= {"Profile", "Email", "Val"}, enabled=false)
 	public void testEmail() {
 		ValidationElements.ValidationEmail(objProfile.getEmail());
 	}
 
-	@Test (groups={"Profile", "Phone"})
+	@Test (groups={"Profile", "Phone", "Val"}, enabled=false)
 	public void testPhone() {
 		ValidationElements.ValidationPhone(objProfile.getPhone());
 	}
 
-//	@Test (groups={"Profile", "Phone"})
-//	public void phoneEqual(String s)
-//	{
-//		objProfile.getPhone().equals(s);
-//	}
+	@Test (groups={"Profile", "Phone", "Equal"})
+	public void phoneEqual()
+	{
+		objProfile.getPhone().equals(Users.getPhone());
+	} 
 
 	@BeforeMethod
 	public void before() {

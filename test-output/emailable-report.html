@@ -31,16 +31,42 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">40,9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">test suit</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">0,1 seconds</td><td class="numi">A </td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">test.TestProfilePage</td><td><a href="#m1"><b>testEmail</b> (Email, Profile) </a></td><td class="numi">1</td><td>1517573636400</td><td class="numi">184</td></tr><tr class="passedodd"><td><a href="#m2"><b>testPhone</b> (Phone, Profile) </a></td><td class="numi">1</td><td>1517573653201</td><td class="numi">208</td></tr>
+<tr><th colspan="4">test suit &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">test.TestLoginPage</td><td><a href="#m1"><b>testLogin</b> (A) </a></td><td class="numi">2</td><td>1517576806901</td><td class="numi">16</td></tr><tr class="failedodd"><td><a href="#m2"><b>testLogin</b> (A) </a></td><td class="numi">2</td><td>1517576806901</td><td class="numi">16</td></tr>
 </table>
-<h1>Default test</h1>
-<h2 id="m1">test.TestProfilePage:testPhone</h2>
+<h1>test suit</h1>
+<h2 id="m1">test.TestLoginPage:testLogin</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>kolia</td>
+<td>empl</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>null</p>
+PageFactory.LoginPage.setLog(LoginPage.java:23)
+<br/>at PageFactory.LoginPage.toLogin(LoginPage.java:36)
+<br/>at test.TestLoginPage.testLogin(TestLoginPage.java:32)
+<br/>25 lines not shown
+</td></tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">test.TestProfilePage:testEmail</h2>
+<h2 id="m2">test.TestLoginPage:testLogin</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>kkskolia</td>
+<td>eempl</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>null</p>
+PageFactory.LoginPage.setLog(LoginPage.java:23)
+<br/>at PageFactory.LoginPage.toLogin(LoginPage.java:36)
+<br/>at test.TestLoginPage.testLogin(TestLoginPage.java:32)
+<br/>25 lines not shown
+</td></tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

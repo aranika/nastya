@@ -29,7 +29,7 @@ public class TestLoginPage {
 	public void testLogin(String name, String password) {
 		
 		objLogin=new LoginPage(driver);
-		objLogin.toLogin(name, password);
+		objLogin.toLogin(name, password); 
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.id("vacationsTab")));
 		(new ValidationElements()).ValidationPageURL(driver, "http://86.57.161.116:10008/#/vacation");		
 	}

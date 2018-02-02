@@ -35,5 +35,13 @@ public class Users {
 		logPas[1][0]="kkskolia"; logPas[1][1]="eempl";
 		return logPas;
 	}
-
+	
+	public static Object getPhone() {
+		Object ob="8-029-7854142";
+		return ob;
+	}
+	public static  Object getEmail() {
+		Object ob="kolia@mail.ru";
+		return ob;
+	}
 }
