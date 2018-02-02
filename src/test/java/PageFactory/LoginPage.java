@@ -35,4 +35,8 @@ public class LoginPage {
 		this.setPassword(strPassword);
 		this.clickLogin();
 	}
+	
+	public String getUrlLoginPage() {
+		return "http://86.57.161.116:10008/#/login";
+	}
 }

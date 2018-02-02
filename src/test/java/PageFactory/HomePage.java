@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 public class HomePage {
 	WebDriver driver;
 	By name=By.cssSelector("[class='dropdown-toggle'] span[class='ng-binding']");
-	By profile=By.cssSelector("[ng-click='profileURL()']");
+	By profile=By.cssSelector("[ng-click='profileURL()']"); 
 	By logout=By.cssSelector("[ng-click='logout()']");
 
 	public HomePage(WebDriver driver) {

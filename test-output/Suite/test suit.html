@@ -55,17 +55,741 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>test suit</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/23/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 02 02:28:32 MSK 2018</td>
+<td>Started on:</td><td>Fri Feb 02 03:15:04 MSK 2018</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (7 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (379 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>all A </td>
+<td>Included groups:</td><td>all A B </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.TestHomePage.testGoToProfile()'><b>testGoToProfile</b><br>Test class: test.TestHomePage</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.HomePage.getName(HomePage.java:19)
+	at PageFactory.HomePage.nameClick(HomePage.java:23)
+	at PageFactory.HomePage.goToProfile(HomePage.java:28)
+	at test.TestHomePage.testGoToProfile(TestHomePage.java:35)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1478150312", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1478150312'><pre>java.lang.NullPointerException
+	at PageFactory.HomePage.getName(HomePage.java:19)
+	at PageFactory.HomePage.nameClick(HomePage.java:23)
+	at PageFactory.HomePage.goToProfile(HomePage.java:28)
+	at test.TestHomePage.testGoToProfile(TestHomePage.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.TestHomePage@6236eb5f</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: kolia, empl</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace637241618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace637241618'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: , </td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2077528955", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2077528955'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: kolia, </td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1490509465", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1490509465'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: , empl</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace812553708", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace812553708'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: kolia, WTVqzHlQDgbUxTjLdflPGTxQOAYGKIjTTxxhLIRFUrISoySEWHzW</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1328238652", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1328238652'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: pfyuCDwbUSwxtaWdXKxegtXzrVyvyienyDIpJZdNoLYvyqACocYm, empl</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace236304360", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace236304360'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: tERQtTDGeqVBlagaFAJvWceORsYwBSqookHmrxnQnijguUiybUpW, GLMNpVhiFGFGAGJecJYeccnacwxBFzQWfLrwujOTcPRFMoFeiEdO</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace785570251", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace785570251'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: 56.566102257411174, 56.18653415246023</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace875313400", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace875313400'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: empl, kolia</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1213818572", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1213818572'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: PBnimahxRBnuNmVECLZQbSuTWGpWPfvgcxNAWCwWlIPaxbIETypG41.009527702938044, HLFyvToOMjvkMrPGqfviSmucZPhCUnsluHzurrCPjKBhXbPyESeu3.08099156305891</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1497018177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1497018177'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: àâÔúõüÁ¸ÿÿåîÿôçßì¨æÄëÈÖÚéõöðáàååçÀÿÇ¸ÕîõôØÍÍÖöûÈûûÀõÿÆãÎþäõÀÈÆ÷Èâê, ÌÝÛöæÙãÕç×ÛÀÃÃßýôÕäÑÿÅçïÈáÕøìçþÐîÎûé÷ÀïÇÐÝüéôíîÍÎÈòÑôñèÔõÐÌÓÈÄ¸ÀÏ÷</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1473205473", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1473205473'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: êÞÄÝÉýõëñÎÑÅá×ÎÃþþ¨ýýïòÉÄÀäèáéâüÕîÙÿàûéÂÙÆËñÔÚÜêÂÈâÃóåðÜÝ¨ùßùÀðÒÅð73.5521511075285, ôÝÌÜËãèÀÜâóÃÎßÔö¸×ÌéÕÝÂ¨ïýÛÏä¨×ûÈùÞÎ÷Â¸øãýãÉíèÂÃê¸ÀÉüÍá÷÷¨ïÎùÚçôÇÙ12.520980474207978</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1128948651", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1128948651'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: âÕÀéÆËî÷ÎÇÅÊÉçØèáÙíìíÊ×Ý¨õÆùæÓÿíøËÐÔçÓÐóøÆÚéÇÇø¸êÍðíÃçËÿíåâÈòÏÈÇÛÒZxzqHfUPsjZipyAzhgOVqdvcXeCgyxYpFafztLbTZsidqRAkusYL, ÛÖÍäÖéðÂÿÈ¨àøÌÃöÿçïùÐ¸÷ÖæùáðÇÔùÖüþÕôåóÏþÔÞëðßÚôø¸ÓåùéÔÜïãóöãþæÎÛÏàquJYfUnODgarzNIeAppvqkWaFYYNayeRHLexVnsNAzkJEmSowAeS</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1055096410", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1055096410'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: +}/,;<&@)|[<*[:._.[|>-|+?'#;;');, ^,__?[_}=['=*_[;=;%!@{]>+={->'^<</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1014982340", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1014982340'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters:  kolia,  empl</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace252553541", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace252553541'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: kolia , empl </td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1406014249", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1406014249'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: kol ia, em pl</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1041365481", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1041365481'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: 44)ã_ýÀLeCá'kØÒÄÏxGeHAÛ4ÑRQbÖ8, 1Þ[À-pzí¹ÐË2lLL3/4f¹óH1ûoÛÐac)Û.cma</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace838473569", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace838473569'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: ;ØB=HÿpòòÜþ)X,kWQ.kVqr)9';, ;ÒSqXv9Ôogûq.yUj2ÊÞÑEyBcßH%ÛA.éTÄ9þu</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace739973450", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace739973450'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: 18-B.WâìoVÐÉ×ÃaQóßÓÖÍ!xhMgôlù;×, éåÏ÷ßïï.VYodk¸Ïïîié.ØÃ2xwwíï</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1426963578", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1426963578'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: bb[Ã¸Yxèy6å0hffÊs7ÈNCEÔóT]ÓþdjZ/÷%ÝÉÿeR, rç%`á,ÂÎVHhâ3VoÅCñWNÚúí]dPöb¹¨W'mîç</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2074820378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2074820378'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+<tr>
+<td title='test.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: test.TestLoginPage<br>Parameters: 7Ïìëq,3ûa3ÊVRÑ1Ã, ù0YúF`áÑb4;ãéÄ1ç%ÈìuÕÞê..âiAQÅLðG8</td>
+<td><div><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace505021446", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace505021446'><pre>java.lang.NullPointerException
+	at PageFactory.LoginPage.setLog(LoginPage.java:21)
+	at PageFactory.LoginPage.toLogin(LoginPage.java:34)
+	at test.TestLoginPage.testLogin(TestLoginPage.java:25)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>test.TestLoginPage@313b2ea6</td></tr>
+</table><p>
 </body>
 </html>

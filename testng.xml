@@ -5,11 +5,14 @@
 		<groups>
 			<define name="all">
 				<include name="A"></include>
+				<include name="B"></include>
 			</define>
 			<run>
 				<include name="all"></include>
-
 			</run>
 		</groups>
+		<packages>
+			<package name="test" />
+		</packages>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
