@@ -35,7 +35,7 @@ public class TestLoginPage {
 			// TODO: handle exception
 			System.out.println("fail for log "+name +" pass "+password);
 		}
-//		(new ValidationElements()).ValidationPageURL(driver, "http://86.57.161.116:10008/#/vacation");		
+		(new ValidationElements()).ValidationPageURL(driver, "http://86.57.161.116:10008/#/vacation");		
 	}
 
 	@BeforeMethod
