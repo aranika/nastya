@@ -3,23 +3,23 @@ package Source;
 public class ElementsProfileSettings {
 	
 	public static String[][] ArrayElProfEdit() {
-		String[][]Elements= {{"a[class='navbar-brand']","RMT"},//
-				{"ul[class='nav navbar-nav']>li>a","Отпуска"},
-				{"a[data-i18n='navbar.orgChart']","Диаграмма"},//
+		String[][]Elements= {{"a[class='navbar-brand']","RMT"},//0
+				{"ul[class='nav navbar-nav']>li>a","Отпуска"},//1
+				{"a[data-i18n='navbar.orgChart']","Диаграмма"},//2
 				{"ul[class='nav navbar-nav']>li>a[data-i18n='navbar.orgChart']","Отчеты"},
 				{"a[class='dropdown-toggle']", "язык"},//
 				{"span[class*='glyphicon glyphicon-user']", "авка"},
 				{"a[class='dropdown-toggle']>span[class='ng-binding']","имя"},
-				{"a>b","выпадающее"},//8
+				{"a>b","выпадающее"},//7
 				{"a[ng-click='profileURL()']","Профиль"},//
 				{"a[ng-click=\"logout()\"]","Выйти"},
 				{"span[data-i18n='profile.settings']","Настройки"},//
-				{"span[class='glyphicon glyphicon-circle-arrow-left']","Back"},//
+				{"span[class='glyphicon glyphicon-circle-arrow-left']","Back"},//11
 				{"div[class='thumbnail']>img","фото"},
 				{"span[class='btn btn-primary']>input[type='file']","смена фото"},//
 				{"[data-i18n='profile.accountInfo']","Информация профиля"},
-				{"[data-i18n='profile.field.firstName']","имя"},//16
-				{"[data-i18n='profile.field.middleName']","Отчество"},
+				{"[data-i18n='profile.field.firstName']","имя"},//15
+				{"[data-i18n='profile.field.middleName']","Отчество"},//16
 				{"[data-i18n='profile.field.lastName']","Фамилия"},//17
 				{"[data-i18n='profile.field.birth']","Дата Рождения"},//18
 				{"form>table>tbody:nth-child(2)>tr:nth-child(5) td:nth-child(1)","Password"},
@@ -35,7 +35,7 @@ public class ElementsProfileSettings {
 				{"form>table:nth-of-type(2)>tbody:nth-of-type(1) tr:nth-of-type(1) input[class='form-control']","знач email"},//29
 				{"td[data-i18n='profile.field.phone']","Телефон"},
 				{"form>table:nth-of-type(2)>tbody:nth-of-type(1) tr:nth-of-type(2) input[class='form-control']","Телефон знач"},//31
-				{"td[data-i18n='profile.field.skype']","Skype"},
+				{"td[data-i18n='profile.field.skype']","Skype"},//32
 				{"form>table:nth-of-type(2)>tbody:nth-of-type(1) tr:nth-of-type(3) input[class='form-control']","Skype знач"},//33
 				{"div[class='col-md-3']:nth-child(1)>ul[class='list-unstyled']:nth-child(1)>li:nth-child(1)","Company"},
 				{"div[class='col-md-3']:nth-child(1)>ul[class='list-unstyled']:nth-child(1)>li:nth-child(3)","About us"},
@@ -57,7 +57,4 @@ public class ElementsProfileSettings {
 		};
 		return Elements;
 	}
-
-
-
 }

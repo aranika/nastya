@@ -9,7 +9,7 @@ import utility.*;
 public class ProfilePage {
 	WebDriver driver;
 	String [][]arrayElEdidProfile=(new ElementsProfileSettings()).ArrayElProfEdit();
-	
+
 	By name=By.cssSelector("[class='dropdown-toggle'] span[class='ng-binding']");
 	By profile=By.cssSelector("[ng-click='profileURL()']");
 	By logout=By.cssSelector("[ng-click='logout()']");
@@ -52,28 +52,51 @@ public class ProfilePage {
 	By comment=By.xpath("/html/body/div[@id='main']/section[@class='container contentContainer ng-scope']/div[@class='ng-scope'][2]/div[@class='pageContent panel panel-default ng-scope']/div[@class='panel-body']/div[@class='row']/div[@class='col-md-9 profileContent']/table[@class='table table-condensed table-hover'][3]/tbody/tr[7]/td[1]");	
 	By commentVal=By.xpath("/html/body/div[@id='main']/section[@class='container contentContainer ng-scope']/div[@class='ng-scope'][2]/div[@class='pageContent panel panel-default ng-scope']/div[@class='panel-body']/div[@class='row']/div[@class='col-md-9 profileContent']/table[@class='table table-condensed table-hover'][3]/tbody/tr[7]/td[2]");		
 
-	By editName=By.cssSelector(arrayElEdidProfile[21][0]);
+	By editFirstName=By.cssSelector(arrayElEdidProfile[21][0]);
 	By editMidName=By.cssSelector(arrayElEdidProfile[22][0]);
-	By editSecName=By.cssSelector(arrayElEdidProfile[23][0]);
+	By editLastName=By.cssSelector(arrayElEdidProfile[23][0]);
 	By editEmail=By.cssSelector(arrayElEdidProfile[29][0]);
 	By editPhone=By.cssSelector(arrayElEdidProfile[31][0]); 
-	
+	By back=By.cssSelector(arrayElEdidProfile[11][0]);
+
 	public ProfilePage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public void goToSettings() {
 		driver.findElement(settings).click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
-	
-	
+	public void goToProfFroSet() {
+		driver.findElement(back).click();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	}
+
 	public String getEmail() {
-		 return FindEl.getValueByCss(arrayElEdidProfile[29][0], driver);// driver.findElement(editEmail).getAttribute("value");
+		return FindEl.getValueByCss(arrayElEdidProfile[29][0], driver);// driver.findElement(editEmail).getAttribute("value");
 	}
 	public String getPhone() {
-		 return FindEl.getValueByCss(arrayElEdidProfile[31][0], driver);
+		return FindEl.getValueByCss(arrayElEdidProfile[31][0], driver);
+	}	
+	public String getFirstName() {
+		return FindEl.getValueByCss(arrayElEdidProfile[15][0], driver);
+	}
+	public String getMidName() {
+		return FindEl.getValueByCss(arrayElEdidProfile[16][0], driver);
+	}
+	public String getLastName() {
+		return FindEl.getValueByCss(arrayElEdidProfile[17][0], driver);
+	}
+	public String getBirth(){
+		return FindEl.getValueByCss(arrayElEdidProfile[18][0], driver);
+	}
+	public String getSkype() {
+		return FindEl.getValueByCss(arrayElEdidProfile[32][0], driver);
+	}	
+	public String getValueActive() {
+		String s=""+FindEl.FindElByCss("[ng-if=\"value == 'true'\"]", driver);
+		return s;
 	}	
 }

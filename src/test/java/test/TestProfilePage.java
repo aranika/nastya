@@ -15,27 +15,70 @@ public class TestProfilePage {
 	LoginPage objLogin;
 	ProfilePage objProfile;
 	HomePage objHome;
-	
-//	@DataProvider (name="dpPhone")
-//	public static Object[] testData() {
-//		return  Users.getPhone() ;
-//	}
 
-	@Test (groups= {"Profile", "Email", "Val"}, enabled=false)
+	//	@DataProvider (name="dpPhone")
+	//	public static Object[] testData() {
+	//		return  Users.getPhone() ;
+	//	}
+
+	@Test (groups= {"Profile", "Email", "Valid"}, enabled=false)
 	public void testEmail() {
 		ValidationElements.ValidationEmail(objProfile.getEmail());
 	}
 
-	@Test (groups={"Profile", "Phone", "Val"}, enabled=false)
+	@Test (groups={"Profile", "Phone", "Valid"}, enabled=false)
 	public void testPhone() {
 		ValidationElements.ValidationPhone(objProfile.getPhone());
 	}
 
+	@Test (groups={"Profile", "Email", "Equal"}, enabled=false)
+	public void emailEqual()
+	{
+		objProfile.getPhone().equals(Users.getEmail());
+	}
 	@Test (groups={"Profile", "Phone", "Equal"})
 	public void phoneEqual()
 	{
 		objProfile.getPhone().equals(Users.getPhone());
 	} 
+
+	@Test (groups={"Profile", "Active", "Equal"}, enabled=false)
+	public void activeEqual()
+	{
+		objProfile.goToProfFroSet();
+		System.out.println("--Value Active--<"+objProfile.getValueActive()+">");
+	} 
+
+	@Test (groups={"Profile", "FirstName", "Equal"}, enabled=false)
+	public void firstNameEqual()
+	{
+		objProfile.getFirstName().equals(Users.getFirstName());
+	}
+
+	@Test (groups={"Profile", "MidleName", "Equal"}, enabled=false)
+	public void midNameEqual()
+	{
+		objProfile.getMidName().equals(Users.getMiddleName());
+	}
+
+	@Test (groups={"Profile", "LastName", "Equal"}, enabled=false)
+	public void lastNameEqual()
+	{
+		objProfile.getLastName().equals(Users.getLastName());
+	}
+
+
+	@Test (groups={"Profile", "Date", "Valid"}, enabled=false)
+	public void birthValid()
+	{
+		ValidationElements.validationDate(objProfile.getBirth());
+	}
+
+	@Test (groups={"Profile", "Date", "Equal"}, enabled=false)
+	public void birthEqual()
+	{
+		objProfile.getBirth().equals(Users.getBirth());
+	}
 
 	@BeforeMethod
 	public void before() {

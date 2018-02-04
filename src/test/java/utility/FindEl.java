@@ -14,6 +14,7 @@ public class FindEl {
 		} 
 		catch (NoSuchElementException e) {
 			// TODO: handle exception
+			System.err.println(e);
 			return false;
 		}
 	}
@@ -25,16 +26,20 @@ public class FindEl {
 		} 
 		catch (NoSuchElementException e) {
 			// TODO: handle exception
+			System.err.println(e);
 			return false;
 		}
 	}
 
 	public static String getValueByCss(String selector, WebDriver driver) {
-		WebElement el= (driver.findElement(By.cssSelector(selector)));
+	
+		
 		if(FindElByCss(selector, driver)) {
+			WebElement el= (driver.findElement(By.cssSelector(selector)));
+//			System.out.println(el);
 			return el.getAttribute("value");
 		}
-		return "";
+		return "error";
 	}
 
 	public static String getValueByXPath(String xpathExpression, WebDriver driver) {

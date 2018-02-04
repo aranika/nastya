@@ -32,10 +32,10 @@ public class Users {
 	public Object[][] getShortUsers() {
 		Object[][]logPas=new String [2][2];
 		logPas[0][0]="kolia"; logPas[0][1]="empl";
-		logPas[1][0]="kkskolia"; logPas[1][1]="eempl";
+		logPas[1][0]="tess"; logPas[1][1]="empl";
 		return logPas;
 	}
-	
+
 	public static Object getPhone() {
 		Object ob="8-029-7854142";
 		return ob;
@@ -43,5 +43,32 @@ public class Users {
 	public static  Object getEmail() {
 		Object ob="kolia@mail.ru";
 		return ob;
+	}
+	public static  Object getFirstName() {
+		Object ob="Nikolaj";
+		return ob;
+	}
+	public static  Object getMiddleName() {
+		Object ob="";
+		return ob;
+	}
+	public static  Object getLastName() {
+		Object ob="Nikolaev";
+		return ob;
+	}
+	public static  Object getBirth() {
+		Object ob="";
+		return ob;
+	}
+	public static  Object getSkype() {
+		Object ob="sdf";
+		return ob;
+	}
+	
+	
+	
+	public static String[] userFields() {
+		String[] fields = {"user_id", "login", "password", "last_login_time", "activ", "employee_fk"};
+		return fields;
 	}
 }
