@@ -3,6 +3,7 @@ package Database;
 import java.sql.*;
 
 public class ConnectionMySQL {
+private static String idUser= "id_user=5";
 
 	private static Statement getStatement() {
 		// TODO Auto-generated method stub
@@ -18,8 +19,8 @@ public class ConnectionMySQL {
 		}
 	}
 
-	public static ResultSet getElement(String el) {
-		String query="select "+el+" from danco_rmt_vacation.user";
+	public static ResultSet getElement(String el, String where) {
+		String query="select "+el+" from danco_rmt_vacation.user "+where;
 		ResultSet resultSet = null;
 		try {
 			resultSet = getStatement().executeQuery(query);
@@ -28,5 +29,10 @@ public class ConnectionMySQL {
 			e.printStackTrace();
 		}
 		return resultSet;
+	}
+	
+	
+	public static ResultSet getEmployee_fk() {
+		return getElement("employee_fk", "where user_id=5");
 	}
 }
