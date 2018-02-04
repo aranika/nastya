@@ -42,49 +42,53 @@ public class TestProfilePage {
 		objProfile.getPhone().equals(Users.getPhone());
 	} 
 
-	@Test (groups={"Profile", "Active", "Equal"}, enabled=false)
+	@Test (groups={"Profile", "Active", "Equal"})
 	public void activeEqual()
 	{
 		objProfile.goToProfFroSet();
-		System.out.println("--Value Active--<"+objProfile.getValueActive()+">");
+		objProfile.getValueActive().equals(Users.getActive());
+//		System.out.println("--Value Active--<"+objProfile.getValueActive()+">");
 	} 
 
-	@Test (groups={"Profile", "FirstName", "Equal"}, enabled=false)
+	@Test (groups={"Profile", "FirstName", "Equal"}, enabled=true)
 	public void firstNameEqual()
 	{
 		objProfile.getFirstName().equals(Users.getFirstName());
 	}
 
-	@Test (groups={"Profile", "MidleName", "Equal"}, enabled=false)
+	@Test (groups={"Profile", "MidleName", "Equal"}, enabled=true)
 	public void midNameEqual()
 	{
 		objProfile.getMidName().equals(Users.getMiddleName());
 	}
 
-	@Test (groups={"Profile", "LastName", "Equal"}, enabled=false)
+	@Test (groups={"Profile", "LastName", "Equal"}, enabled=true)
 	public void lastNameEqual()
 	{
 		objProfile.getLastName().equals(Users.getLastName());
 	}
 
 
-	@Test (groups={"Profile", "Date", "Valid"}, enabled=false)
+	@Test (groups={"Profile", "Date", "Valid"}, enabled=true)
 	public void birthValid()
 	{
 		ValidationElements.validationDate(objProfile.getBirth());
 	}
 
-	@Test (groups={"Profile", "Date", "Equal"}, enabled=false)
+	@Test (groups={"Profile", "Date", "Equal"}, enabled=true)
 	public void birthEqual()
 	{
 		objProfile.getBirth().equals(Users.getBirth());
 	}
+	
+	
 
-	@Test (groups={"Profile", "Skype", "Equal"}, enabled=false)
+	@Test (groups={"Profile", "Skype", "Equal"}, enabled=true)
 	public void skypeEqual()
 	{
 		objProfile.getSkype().equals(Users.getSkype());
 	}
+	
 	
 	@BeforeMethod
 	public void before() {
