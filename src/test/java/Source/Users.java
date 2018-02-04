@@ -32,7 +32,7 @@ public class Users {
 	public Object[][] getShortUsers() {
 		Object[][]logPas=new String [2][2];
 		logPas[0][0]="kolia"; logPas[0][1]="empl";
-		logPas[1][0]="tess"; logPas[1][1]="empl";
+		logPas[1][0]="tes"; logPas[1][1]="empl";
 		return logPas;
 	}
 
@@ -57,7 +57,7 @@ public class Users {
 		return ob;
 	}
 	public static  Object getBirth() {
-		Object ob="";
+		Object ob=null;
 		return ob;
 	}
 	public static  Object getSkype() {

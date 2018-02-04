@@ -3,7 +3,9 @@
 <suite name="Suite">
 	<test name="test suit">
 		<classes>
+			<class name="test.TestLoginPage"></class>
 			<class name="test.TestProfilePage"></class>
+
 		</classes>
 		<!-- <groups> <define name="all"> <include name="A"></include> <include 
 			name="B"></include> <include name="Profile"></include> <include name="Equal"></include> 

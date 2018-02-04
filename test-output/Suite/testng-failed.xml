@@ -3,10 +3,23 @@
 <suite name="Failed suite [Suite]">
   <test name="test suit(failed)">
     <classes>
+      <class name="test.TestProfilePage">
+        <methods>
+          <include name="lastNameEqual"/>
+          <include name="skypeEqual"/>
+          <include name="before"/>
+          <include name="firstNameEqual"/>
+          <include name="phoneEqual"/>
+          <include name="midNameEqual"/>
+          <include name="after"/>
+          <include name="birthEqual"/>
+          <include name="birthValid"/>
+        </methods>
+      </class> <!-- test.TestProfilePage -->
       <class name="test.TestLoginPage">
         <methods>
           <include name="before"/>
-          <include name="testLogin"/>
+          <include name="after"/>
         </methods>
       </class> <!-- test.TestLoginPage -->
     </classes>
