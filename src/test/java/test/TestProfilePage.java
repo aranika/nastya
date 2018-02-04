@@ -80,6 +80,12 @@ public class TestProfilePage {
 		objProfile.getBirth().equals(Users.getBirth());
 	}
 
+	@Test (groups={"Profile", "Skype", "Equal"}, enabled=false)
+	public void skypeEqual()
+	{
+		objProfile.getSkype().equals(Users.getSkype());
+	}
+	
 	@BeforeMethod
 	public void before() {
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
