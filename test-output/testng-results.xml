@@ -1,88 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="7" passed="7" failed="0" skipped="0">
+<testng-results total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-02-05T11:10:11Z" name="Default suite" finished-at="2018-02-05T11:10:26Z" duration-ms="15087">
+  <suite started-at="2018-02-05T11:15:45Z" name="Suite" finished-at="2018-02-05T11:16:21Z" duration-ms="35533">
     <groups>
+      <group name="A">
+        <method signature="TestLoginPage.testLogin(java.lang.String, java.lang.String)[pri:0, instance:test.TestLoginPage@78ffe6dc]" name="testLogin" class="test.TestLoginPage"/>
+      </group> <!-- A -->
+      <group name="Active">
+        <method signature="TestProfilePageDB.activeEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="activeEqual" class="test.TestProfilePageDB"/>
+      </group> <!-- Active -->
       <group name="Skype">
-        <method signature="TestProfilePage.skypeEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="skypeEqual" class="test.TestProfilePage"/>
+        <method signature="TestProfilePageDB.skypeEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="skypeEqual" class="test.TestProfilePageDB"/>
       </group> <!-- Skype -->
+      <group name="Email">
+        <method signature="TestProfilePageDB.emailEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="emailEqual" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.testEmail()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="testEmail" class="test.TestProfilePageDB"/>
+      </group> <!-- Email -->
       <group name="MidleName">
-        <method signature="TestProfilePage.midNameEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="midNameEqual" class="test.TestProfilePage"/>
+        <method signature="TestProfilePageDB.midNameEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="midNameEqual" class="test.TestProfilePageDB"/>
       </group> <!-- MidleName -->
       <group name="Equal">
-        <method signature="TestProfilePage.birthEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="birthEqual" class="test.TestProfilePage"/>
-        <method signature="TestProfilePage.firstNameEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="firstNameEqual" class="test.TestProfilePage"/>
-        <method signature="TestProfilePage.lastNameEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="lastNameEqual" class="test.TestProfilePage"/>
-        <method signature="TestProfilePage.midNameEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="midNameEqual" class="test.TestProfilePage"/>
-        <method signature="TestProfilePage.phoneEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="phoneEqual" class="test.TestProfilePage"/>
-        <method signature="TestProfilePage.skypeEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="skypeEqual" class="test.TestProfilePage"/>
+        <method signature="TestProfilePageDB.activeEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="activeEqual" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.birthEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="birthEqual" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.emailEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="emailEqual" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.firstNameEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="firstNameEqual" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.lastNameEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="lastNameEqual" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.midNameEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="midNameEqual" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.phoneEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="phoneEqual" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.skypeEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="skypeEqual" class="test.TestProfilePageDB"/>
       </group> <!-- Equal -->
       <group name="Valid">
-        <method signature="TestProfilePage.birthValid()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="birthValid" class="test.TestProfilePage"/>
+        <method signature="TestProfilePageDB.birthValid()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="birthValid" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.testEmail()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="testEmail" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.testPhone()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="testPhone" class="test.TestProfilePageDB"/>
       </group> <!-- Valid -->
       <group name="FirstName">
-        <method signature="TestProfilePage.firstNameEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="firstNameEqual" class="test.TestProfilePage"/>
+        <method signature="TestProfilePageDB.firstNameEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="firstNameEqual" class="test.TestProfilePageDB"/>
       </group> <!-- FirstName -->
       <group name="Phone">
-        <method signature="TestProfilePage.phoneEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="phoneEqual" class="test.TestProfilePage"/>
+        <method signature="TestProfilePageDB.phoneEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="phoneEqual" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.testPhone()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="testPhone" class="test.TestProfilePageDB"/>
       </group> <!-- Phone -->
       <group name="LastName">
-        <method signature="TestProfilePage.lastNameEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="lastNameEqual" class="test.TestProfilePage"/>
+        <method signature="TestProfilePageDB.lastNameEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="lastNameEqual" class="test.TestProfilePageDB"/>
       </group> <!-- LastName -->
       <group name="Profile">
-        <method signature="TestProfilePage.birthEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="birthEqual" class="test.TestProfilePage"/>
-        <method signature="TestProfilePage.birthValid()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="birthValid" class="test.TestProfilePage"/>
-        <method signature="TestProfilePage.firstNameEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="firstNameEqual" class="test.TestProfilePage"/>
-        <method signature="TestProfilePage.lastNameEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="lastNameEqual" class="test.TestProfilePage"/>
-        <method signature="TestProfilePage.midNameEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="midNameEqual" class="test.TestProfilePage"/>
-        <method signature="TestProfilePage.phoneEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="phoneEqual" class="test.TestProfilePage"/>
-        <method signature="TestProfilePage.skypeEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="skypeEqual" class="test.TestProfilePage"/>
+        <method signature="TestProfilePageDB.activeEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="activeEqual" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.birthEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="birthEqual" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.birthValid()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="birthValid" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.emailEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="emailEqual" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.firstNameEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="firstNameEqual" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.lastNameEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="lastNameEqual" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.midNameEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="midNameEqual" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.phoneEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="phoneEqual" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.skypeEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="skypeEqual" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.testEmail()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="testEmail" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.testPhone()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="testPhone" class="test.TestProfilePageDB"/>
       </group> <!-- Profile -->
       <group name="Date">
-        <method signature="TestProfilePage.birthEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="birthEqual" class="test.TestProfilePage"/>
-        <method signature="TestProfilePage.birthValid()[pri:0, instance:test.TestProfilePage@5ab9e72c]" name="birthValid" class="test.TestProfilePage"/>
+        <method signature="TestProfilePageDB.birthEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="birthEqual" class="test.TestProfilePageDB"/>
+        <method signature="TestProfilePageDB.birthValid()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" name="birthValid" class="test.TestProfilePageDB"/>
       </group> <!-- Date -->
     </groups>
-    <test started-at="2018-02-05T11:10:11Z" name="Default test" finished-at="2018-02-05T11:10:26Z" duration-ms="15087">
-      <class name="test.TestProfilePage">
-        <test-method is-config="true" signature="before()[pri:0, instance:test.TestProfilePage@5ab9e72c]" started-at="2018-02-05T14:10:11Z" name="before" finished-at="2018-02-05T14:10:24Z" duration-ms="13441" status="PASS">
+    <test started-at="2018-02-05T11:15:45Z" name="test suit" finished-at="2018-02-05T11:16:21Z" duration-ms="35533">
+      <class name="test.TestLoginPage">
+        <test-method is-config="true" signature="before()[pri:0, instance:test.TestLoginPage@78ffe6dc]" started-at="2018-02-05T14:15:55Z" name="before" finished-at="2018-02-05T14:16:01Z" duration-ms="6289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method signature="birthEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" started-at="2018-02-05T14:10:24Z" name="birthEqual" finished-at="2018-02-05T14:10:24Z" duration-ms="6" status="PASS">
+        <test-method signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:test.TestLoginPage@78ffe6dc]" started-at="2018-02-05T14:16:01Z" name="testLogin" data-provider="dp" finished-at="2018-02-05T14:16:05Z" duration-ms="4194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kolia]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[empl]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- birthEqual -->
-        <test-method signature="birthValid()[pri:0, instance:test.TestProfilePage@5ab9e72c]" started-at="2018-02-05T14:10:24Z" name="birthValid" finished-at="2018-02-05T14:10:24Z" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- birthValid -->
-        <test-method signature="firstNameEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" started-at="2018-02-05T14:10:24Z" name="firstNameEqual" finished-at="2018-02-05T14:10:25Z" duration-ms="134" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- firstNameEqual -->
-        <test-method signature="lastNameEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" started-at="2018-02-05T14:10:25Z" name="lastNameEqual" finished-at="2018-02-05T14:10:25Z" duration-ms="74" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lastNameEqual -->
-        <test-method signature="midNameEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" started-at="2018-02-05T14:10:25Z" name="midNameEqual" finished-at="2018-02-05T14:10:25Z" duration-ms="100" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- midNameEqual -->
-        <test-method signature="phoneEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" started-at="2018-02-05T14:10:25Z" name="phoneEqual" finished-at="2018-02-05T14:10:25Z" duration-ms="72" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- phoneEqual -->
-        <test-method signature="skypeEqual()[pri:0, instance:test.TestProfilePage@5ab9e72c]" started-at="2018-02-05T14:10:25Z" name="skypeEqual" finished-at="2018-02-05T14:10:25Z" duration-ms="58" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skypeEqual -->
-        <test-method is-config="true" signature="after()[pri:0, instance:test.TestProfilePage@5ab9e72c]" started-at="2018-02-05T14:10:25Z" name="after" finished-at="2018-02-05T14:10:26Z" duration-ms="1165" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="after()[pri:0, instance:test.TestLoginPage@78ffe6dc]" started-at="2018-02-05T14:16:05Z" name="after" finished-at="2018-02-05T14:16:07Z" duration-ms="1196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-      </class> <!-- test.TestProfilePage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="before()[pri:0, instance:test.TestLoginPage@78ffe6dc]" started-at="2018-02-05T14:16:07Z" name="before" finished-at="2018-02-05T14:16:13Z" duration-ms="6620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:test.TestLoginPage@78ffe6dc]" started-at="2018-02-05T14:16:13Z" name="testLogin" data-provider="dp" finished-at="2018-02-05T14:16:15Z" duration-ms="1387" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[empl]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="after()[pri:0, instance:test.TestLoginPage@78ffe6dc]" started-at="2018-02-05T14:16:15Z" name="after" finished-at="2018-02-05T14:16:16Z" duration-ms="1039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- test.TestLoginPage -->
+      <class name="test.TestProfilePageDB">
+        <test-method is-config="true" signature="before()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" started-at="2018-02-05T14:15:45Z" name="before" finished-at="2018-02-05T14:15:55Z" duration-ms="9695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="birthEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" started-at="2018-02-05T14:16:16Z" name="birthEqual" finished-at="2018-02-05T14:16:17Z" duration-ms="791" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- birthEqual -->
+        <test-method signature="birthValid()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" started-at="2018-02-05T14:16:17Z" name="birthValid" finished-at="2018-02-05T14:16:17Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- birthValid -->
+        <test-method signature="skypeEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" started-at="2018-02-05T14:16:17Z" name="skypeEqual" finished-at="2018-02-05T14:16:17Z" duration-ms="395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- skypeEqual -->
+        <test-method signature="testEmail()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" started-at="2018-02-05T14:16:17Z" name="testEmail" finished-at="2018-02-05T14:16:17Z" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmail -->
+        <test-method signature="firstNameEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" started-at="2018-02-05T14:16:17Z" name="firstNameEqual" finished-at="2018-02-05T14:16:18Z" duration-ms="516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstNameEqual -->
+        <test-method signature="testPhone()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" started-at="2018-02-05T14:16:18Z" name="testPhone" finished-at="2018-02-05T14:16:18Z" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPhone -->
+        <test-method signature="midNameEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" started-at="2018-02-05T14:16:18Z" name="midNameEqual" finished-at="2018-02-05T14:16:18Z" duration-ms="520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- midNameEqual -->
+        <test-method signature="lastNameEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" started-at="2018-02-05T14:16:18Z" name="lastNameEqual" finished-at="2018-02-05T14:16:19Z" duration-ms="460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastNameEqual -->
+        <test-method signature="phoneEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" started-at="2018-02-05T14:16:19Z" name="phoneEqual" finished-at="2018-02-05T14:16:19Z" duration-ms="441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- phoneEqual -->
+        <test-method signature="emailEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" started-at="2018-02-05T14:16:19Z" name="emailEqual" finished-at="2018-02-05T14:16:19Z" duration-ms="461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailEqual -->
+        <test-method signature="activeEqual()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" started-at="2018-02-05T14:16:19Z" name="activeEqual" finished-at="2018-02-05T14:16:20Z" duration-ms="520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- activeEqual -->
+        <test-method is-config="true" signature="after()[pri:0, instance:test.TestProfilePageDB@236e3f4e]" started-at="2018-02-05T14:16:20Z" name="after" finished-at="2018-02-05T14:16:21Z" duration-ms="841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- test.TestProfilePageDB -->
+    </test> <!-- test suit -->
+  </suite> <!-- Suite -->
 </testng-results>
