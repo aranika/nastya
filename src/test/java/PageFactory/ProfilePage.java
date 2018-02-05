@@ -81,19 +81,19 @@ public class ProfilePage {
 		return FindEl.getValueByCss(arrayElEdidProfile[31][0], driver);
 	}	
 	public String getFirstName() {
-		return FindEl.getValueByCss(arrayElEdidProfile[15][0], driver);
+		return FindEl.getValueByCss(arrayElEdidProfile[21][0], driver);
 	}
 	public String getMidName() {
-		return FindEl.getValueByCss(arrayElEdidProfile[16][0], driver);
+		return FindEl.getValueByCss(arrayElEdidProfile[22][0], driver);
 	}
 	public String getLastName() {
-		return FindEl.getValueByCss(arrayElEdidProfile[17][0], driver);
+		return FindEl.getValueByCss(arrayElEdidProfile[23][0], driver);
 	}
 	public String getBirth(){
 		return "2013-01-01";//FindEl.getValueByCss(arrayElEdidProfile[18][0], driver);
 	}
 	public String getSkype() {
-		return FindEl.getValueByCss(arrayElEdidProfile[32][0], driver);
+		return FindEl.getValueByCss(arrayElEdidProfile[33][0], driver);
 	}	
 	public String getValueActive() {
 		String s=""+FindEl.FindElByCss("[ng-if=\"value == 'true'\"]", driver);
