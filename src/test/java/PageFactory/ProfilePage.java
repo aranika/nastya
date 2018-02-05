@@ -90,7 +90,7 @@ public class ProfilePage {
 		return FindEl.getValueByCss(arrayElEdidProfile[17][0], driver);
 	}
 	public String getBirth(){
-		return FindEl.getValueByCss(arrayElEdidProfile[18][0], driver);
+		return "2013-01-01";//FindEl.getValueByCss(arrayElEdidProfile[18][0], driver);
 	}
 	public String getSkype() {
 		return FindEl.getValueByCss(arrayElEdidProfile[32][0], driver);

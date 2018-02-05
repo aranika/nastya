@@ -69,8 +69,6 @@ public class Users {
 		return ob;
 	}
 	
-	
-	
 	public static String[] userFields() {
 		String[] fields = {"user_id", "login", "password", "last_login_time", "activ", "employee_fk"};
 		return fields;
